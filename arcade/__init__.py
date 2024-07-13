@@ -414,7 +414,7 @@ if not getattr(sys, "is_pyglet_doc_run", False):
     load_font(":system:fonts/ttf/Kenney_Rocket_Square.ttf")
 
     # Load additional game controller mappings to Pyglet
-    if not arcade.headless:
+    if not headless:
         try:
             import pyglet.input.controller
 
